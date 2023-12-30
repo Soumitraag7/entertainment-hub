@@ -15,14 +15,7 @@ function App() {
 			<Header />
 			<div className="app">
 				<Container>
-					<span>app.js</span>
 					<Outlet />
-					{/* <Switch>
-						<Route path="/" component={Trending} exact />
-						<Route path="/movies" component={Movies} />
-						<Route path="/series" component={Series} />
-						<Route path="/search" component={Search} />
-					</Switch> */}
 				</Container>
 			</div>
 			<SimpleBottomNavigation />

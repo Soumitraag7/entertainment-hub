@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 function Header() {
 	return (
 		<Link to="/">
-			<span className="header">🎬 Entertainment Hub 🎥</span>;
+			<span onClick={() => window.scroll(0, 0)} className="header">
+				🎬 Entertainment Hub 🎥
+			</span>
+			;
 		</Link>
 	);
 }
