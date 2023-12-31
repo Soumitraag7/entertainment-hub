@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Search = () => {
-  return (
-    <div>
+	return (
+		<div>
 			<span className="pageTitle">Search</span>
-      
-    </div>
-  )
-}
+		</div>
+	);
+};
 
-export default Search
+export default Search;
