@@ -2,13 +2,13 @@ import React from 'react';
 import Pagination from '@mui/material/Pagination';
 import { ThemeProvider, createTheme } from '@mui/material';
 
-const darkTheme = createTheme({
-	palette: {
-		mode: 'dark'
-	}
-});
-
 const CustomPagination = ({ setPage, numOfPages = 10 }) => {
+	const darkTheme = createTheme({
+		palette: {
+			mode: 'dark'
+		}
+	});
+
 	const handlePageChange = page => {
 		setPage(page);
 		window.scroll(0, 0);
