@@ -36,6 +36,7 @@ const Trending = () => {
 							date={c.first_air_date || c.release_date}
 							media_type={c.media_type}
 							vote_average={c.vote_average}
+							original_language={c.original_language}
 						/>
 					))}
 			</div>
