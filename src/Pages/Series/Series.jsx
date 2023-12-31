@@ -51,7 +51,7 @@ const Series = () => {
 							title={c.title || c.name}
 							poster={c.poster_path}
 							date={c.first_air_date || c.release_date}
-							media_type={c.media_type}
+							media_type='tv'
 							vote_average={c.vote_average}
 							original_language={c.original_language}
 						/>
