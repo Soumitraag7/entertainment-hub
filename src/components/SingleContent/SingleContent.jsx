@@ -2,6 +2,7 @@ import React from 'react';
 import conf from '../../conf/conf';
 import './SingleContent.css';
 import { Badge } from '@mui/material';
+import ContentModal from '../ContentModal/ContentModal';
 
 function SingleContent({
 	id,
@@ -13,7 +14,7 @@ function SingleContent({
 	original_language
 }) {
 	return (
-		<div className="media">
+		<ContentModal media_type={media_type} id={id}>
 			<Badge
 				badgeContent={vote_average.toFixed(1)}
 				color={vote_average > 6 ? 'primary' : 'secondary'}
@@ -38,7 +39,7 @@ function SingleContent({
 				{media_type === 'tv' ? 'TV Series' : 'Movie'}
 				<span className="subTitle">{date}</span>
 			</span>
-		</div>
+		</ContentModal>
 	);
 }
 
